@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author cheesechang
  */
 @SpringBootApplication
-@MapperScan("com.baomidou.mybatisplus.samples.quickstart.mapper")
+@MapperScan("com.bootgrdle.demo.mapper")
 public class DemoApplication {
 
     public static void main(String[] args) {
