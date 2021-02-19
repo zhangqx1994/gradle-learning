@@ -41,6 +41,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'com.alibaba:fastjson:1.2.75'
+    implementation 'mysql:mysql-connector-java:8.0.23'
+    compile 'com.alibaba:druid-spring-boot-starter:1.1.10'
     compile group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.2'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
