@@ -1,7 +1,5 @@
 package com.bootgrdle.demo;
 
-import com.bootgrdle.demo.entity.User;
-import com.bootgrdle.demo.mapper.UserMapper;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

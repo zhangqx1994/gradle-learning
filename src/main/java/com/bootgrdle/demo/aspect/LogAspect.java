@@ -34,7 +34,7 @@ public class LogAspect {
      *  通过joinPoint参数可以获得目标方法的类名，方法参数，方法名等信息，这个参数可有可无。
      */
 
-    @Before("pointCutMethodController()")
+//    @Before("pointCutMethodController()")
     public void doBefore(JoinPoint joinPoint) {
         String className = joinPoint.getTarget().getClass().getName();
         String methodName = joinPoint.getSignature().getName();
@@ -55,7 +55,6 @@ public class LogAspect {
      */
     @AfterReturning(pointcut = "pointCutMethodController()", returning = "result")
     public void doAfterReturning(String result) {
-        log.info("@AfterReturning:后置通知");
         log.info("---" + result + "---");
     }
 
@@ -72,7 +71,7 @@ public class LogAspect {
      */
     @After("pointCutMethodController()")
     public void doAfter() {
-        log.info("after");
+//        log.info("after");
     }
     /*
      * 声明环绕通知
